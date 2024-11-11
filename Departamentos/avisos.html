@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avisos</title>
+    <link rel="stylesheet" href="avisos.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Contenedor de contenido -->
+        <div class="content">
+            
+            <div class="avisos-section">
+                <!-- Columna de Avisos Nuevos -->
+                <div class="avisos-nuevos">
+                    <h2>Avisos Nuevos</h2>
+                    
+                    <!-- Formulario para agregar nuevos avisos -->
+                    <form id="form-avisos">
+                        <label for="avisos">Nuevo Aviso:</label>
+                        <textarea id="avisos" placeholder="Escribe tu aviso aquí..." required></textarea>
+
+                        <label for="usuario">Usuario:</label>
+                        <input type="text" id="usuario" placeholder="Nombre del usuario" required>
+
+                        <label for="fecha">Fecha:</label>
+                        <input type="date" id="fecha" required>
+
+                        <button type="submit">Agregar Aviso</button>
+                    </form>
+                </div>
+
+                <!-- Columna de Avisos Pendientes -->
+                <div class="avisos-pendientes">
+                    <h2>Avisos Pendientes</h2>
+                    <div id="avisos-pendientes">
+                        <!-- Los avisos pendientes se mostrarán aquí -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="avisos.js"></script>
+</body>
+</html>

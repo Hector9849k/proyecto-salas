@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juntas</title>
+  <link rel="stylesheet" href="juntas.css">
+</head>
+<body>
+  <div class="content-container">
+    <div class="left-column">
+      <h3>Juntas Programadas</h3>
+      <div id="juntas-list">
+        <!-- Aquí se mostrarán las juntas programadas -->
+      </div>
+    </div>
+
+    <div class="right-column">
+      <h2>Agregar Nueva Junta</h2>
+      <div class="add-junta-form">
+        <form id="add-junta-form">
+          <input type="text" id="concepto" placeholder="Concepto de la Junta" required>
+          <input type="date" id="fecha" required>
+          <input type="time" id="hora" required>
+          <input type="text" id="lugar" placeholder="Lugar de la Junta" required>
+          <input type="text" id="asistentes" placeholder="Personas que asistirán" required>
+          <button type="submit">Agregar Junta</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="juntas.js"></script>
+</body>
+</html>

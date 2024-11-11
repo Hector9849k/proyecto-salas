@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pendientes</title>
+  <link rel="stylesheet" href="pendientes.css">
+</head>
+<body>
+  <div class="content-wrapper">
+    <div class="container">
+      <h2>Pendientes</h2>
+      
+      <!-- Formulario para agregar pendiente -->
+      <div class="add-pending-form">
+        <h3>Agregar Nuevo Pendiente</h3>
+        <form id="add-pending-form">
+          <input type="text" id="descripcion" placeholder="Descripción del pendiente" required>
+          <input type="date" id="fecha" required>
+          
+          <!-- Selector de urgencia -->
+          <label for="urgencia">Urgencia:</label>
+          <select id="urgencia" required>
+            <option value="rojo">Urgente</option>
+            <option value="amarillo">Medio</option>
+            <option value="verde">Bajo</option>
+          </select>
+
+          <button type="submit">Agregar Pendiente</button>
+        </form>
+      </div>
+
+      <!-- Lista de pendientes -->
+      <div class="pending-list">
+        <h3>Lista de Pendientes</h3>
+        <div id="pendientes-list">
+          <!-- Aquí se agregarán los pendientes -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="pendientes.js"></script>
+</body>
+</html>

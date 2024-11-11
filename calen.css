@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f4f6;  /* Fondo del cuerpo */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    height: 100vh;  /* Esto asegura que la imagen de fondo ocupe toda la pantalla */
+    overflow: hidden;  /* Para evitar el desplazamiento en la pantalla */
+}
+
+.calendar-container {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 700px;
+    z-index: 10; /* Asegúrate de que esté encima de cualquier imagen de fondo */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.calendar-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.calendar {
+    width: 60%;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#month-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #007BFF;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+button:hover {
+    color: #0056b3;
+}
+
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    font-weight: bold;
+    color: #555;
+}
+
+.calendar-days-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.calendar-day {
+    padding: 8px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+}
+
+.calendar-day:hover {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.event-details {
+    width: 35%;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.event-details h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+#event-list {
+    list-style-type: none;
+}
+
+#event-list li {
+    background-color: #e0f7fa;
+    margin-bottom: 10px;
+    padding: 12px;
+    border-radius: 8px;
+    color: #00796b;
+}
+
+#event-list li:hover {
+    background-color: #80cbc4;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}

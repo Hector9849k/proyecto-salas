@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+  }
+  
+  .content-container {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 0 auto;
+  }
+  
+  .left-column,
+  .right-column {
+    width: 48%;
+  }
+  
+  .left-column {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .right-column {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2, h3 {
+    text-align: center;
+    color: #007bff;
+  }
+  
+  .add-junta-form {
+    margin-top: 20px;
+  }
+  
+  .add-junta-form input,
+  .add-junta-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .add-junta-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-junta-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .juntas {
+    margin-top: 20px;
+  }
+  
+  .juntas h3 {
+    color: #007bff;
+    margin-bottom: 15px;
+  }
+  
+  .junta {
+    padding: 15px;
+    background-color: #e0f7fa;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .junta h4 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .junta p {
+    margin-bottom: 10px;
+  }
+  
+  .junta .asistentes {
+    font-style: italic;
+    color: #333;
+  }
+  
+  .junta button {
+    background-color: #28a745;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .junta button:hover {
+    background-color: #218838;
+  }
+  

@@ -1,0 +1,219 @@
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* Botón de mostrar/ocultar */
+.toggle-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #34495e;
+  color: #fff;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 10;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background: #34495e;
+  color: #ecf0f1;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: -250px; /* Oculta la barra lateral inicialmente */
+  transition: left 0.3s ease; /* Añade una transición */
+}
+
+.sidebar.show {
+  left: 0; /* Muestra la barra lateral */
+}
+
+.sidebar h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  margin: 1rem 0;
+}
+
+.sidebar ul li a {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-size: 1.1rem;
+  display: block;
+  padding: 0.5rem;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.sidebar ul li a:hover {
+  background: #2c3e50;
+}
+
+/* Content */
+.content {
+  flex: 1;
+  padding: 20px;
+  margin-left: 20px;
+  background: transparent;
+  transition: margin-left 0.3s ease;
+}
+
+.content.shifted {
+  margin-left: 250px; /* Ajusta el contenido cuando la barra lateral está visible */
+}
+
+header {
+  background: #3498db;
+  color: white;
+  padding: 0.45rem;
+  text-align: center;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #34495e;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* Estilos para el menú del perfil (Botón a la derecha) */
+.profile-dropdown {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: inline-block;
+}
+
+.profile-btn {
+  background-color: #3498db;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.profile-btn i {
+  margin-right: 8px; /* Espacio entre el ícono y el texto */
+}
+
+.profile-menu {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background-color: #ecf0f1;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  width: 180px;
+  z-index: 100;
+}
+
+.profile-menu ul {
+  list-style: none;
+}
+
+.profile-menu ul li {
+  margin: 1rem 0;
+}
+
+.profile-menu ul li a {
+  color: #34495e;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.profile-menu ul li a:hover {
+  background-color: #3498db;
+  color: white;
+}
+
+/* Mostrar el menú de perfil cuando se activa */
+.profile-menu.show {
+  display: block;
+}
+
+.profile-menu a {
+  color: #34495e;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.profile-menu a i {
+  font-size: 1.2rem;
+  margin-right: 8px;
+}
+
+.profile-menu a:hover {
+  background-color: #d5d8dc;
+}
+
+.profile-menu a:last-child {
+  border-bottom: none;
+}
+
+.water-image {
+  position: fixed;
+  top: 300px; /* Distancia desde la parte superior de la pantalla */
+  left: 55%; /* Centrado horizontal */
+  transform: translateX(-50%); /* Ajusta para que quede perfectamente centrada */
+  z-index: -10; /* Asegura que esté encima de otros elementos */
+}
+
+.water-image img {
+  max-width: 55%; /* Ajusta la imagen al ancho del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  opacity: 0.8; /* Opcional: ajusta la transparencia si deseas un efecto de agua más suave */
+  border-radius: 8px; /* Opcional: añade bordes redondeados */
+}
+
+.content-area{
+  text-align: center;
+}

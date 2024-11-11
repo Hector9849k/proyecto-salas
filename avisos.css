@@ -1,0 +1,81 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    background-color: #ecf0f1;
+}
+
+/* Sección principal de avisos dividida en dos columnas */
+.avisos-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.avisos-nuevos,
+.avisos-pendientes {
+    width: 48%; /* Cada columna ocupa casi la mitad del espacio */
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+ h2 {
+    color: #2c3e50;
+}
+
+#form-avisos {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#form-avisos input, #form-avisos textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+#form-avisos button {
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#form-avisos button:hover {
+    background-color: #2980b9;
+}
+
+.avisos-item {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.avisos-item span {
+    display: block;
+    color: #7f8c8d;
+    font-size: 14px;
+    margin-top: 10px;
+}
+

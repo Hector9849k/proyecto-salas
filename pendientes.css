@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    padding-top: 20px;
+  }
+  
+  .content-wrapper {
+    margin-left: 250px; /* Para no mover la barra lateral */
+    padding-right: 20px;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #007bff;
+  }
+  
+  .add-pending-form,
+  .pending-list {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .add-pending-form input,
+  .add-pending-form select,
+  .add-pending-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .add-pending-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .add-pending-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .pending-list h3 {
+    color: #007bff;
+    margin-bottom: 10px;
+  }
+  
+  .pending-item {
+    background-color: #e0f7fa;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .pending-item h4 {
+    color: #333;
+  }
+  
+  .pending-item p {
+    color: #333;
+  }
+  
+  .pending-item select {
+    padding: 5px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .pending-item button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .pending-item button:hover {
+    background-color: #218838;
+  }
+  
+  /* Estilos para los colores de urgencia */
+  .pending-item.urgente {
+    border-left: 5px solid red;
+  }
+  
+  .pending-item.medio {
+    border-left: 5px solid yellow;
+  }
+  
+  .pending-item.bajo {
+    border-left: 5px solid green;
+  }
+  
+  .pending-item.completado {
+    background-color: #d4edda;
+    color: #3c763d;
+  }
+  
